@@ -17,6 +17,12 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.7",
+<<<<<<< HEAD
     "sass-flex-mixin": "^1.0.3"
+=======
+    "font-awesome": "^4.7.0",
+    "bootstrap-sass": "^3.3.7",
+    "breakpoint-sass": "^2.7.1"
+>>>>>>> master
   }
 }
