@@ -21,9 +21,11 @@ header
 			+make-sm-column(3)
 			+make-xs-column(6)
 			overflow: hidden
+			margin-bottom: 30px
 
 			figure 
 				position: relative
+				background: $branco
 
 				&:hover
 					a
@@ -49,6 +51,7 @@ header
 						h3
 							+font-size(22px)
 							margin: 0
+							color: $branco
 
 						p 
 							+font-size(18px)
@@ -61,7 +64,7 @@ header
 						+opacity(.8)
 						position: absolute
 						left: 0
-						top: 100
+						top: 100%
 						z-index: 1
 						display: block
 						width: 100%
