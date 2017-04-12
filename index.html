@@ -9,81 +9,112 @@
 	<link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-	<header>
-		<div class="container">
-			<div class="logo">
-				<a href="index.html">
-					<img src="img/logo-tag-topo.svg" alt="logo Topo Tag" />
-				</a>
-			</div>
-			<div class="links">
-				<nav>
-					<ul>
-						<li><a href="index.html">Inicio</a></li>
-						<li><a href="sobre.html">Sobre</a></li>
-						<li><a href="portfolio.html">Portfolio</a></li>
-						<li><a href="contato.html">Contato</a></li>
-					</ul>
-				</nav>
 
-				<ul class="social">
-					<li>
-						<a href="#"><i class="fa fa-facebook"></i></a>
-					</li>
+	<nav class="menu-responsivo">
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="sobre.html">Sobre</a></li>
+			<li><a href="portfolio.html">Portfolio</a></li>
+			<li><a href="contato.html">Contato</a></li>
+		</ul>
+	</nav>
 
-					<li>
-						<a href="#"><i class="fa fa-github-alt"></i></a>
-					</li>
-				</ul>
-			</div>
-
-			<h1><strong>Project</strong> R. <strong>Informática</strong></h1>
-
-			<p>Code // Share // Reboot</p>
-		</div>
-	</header>
-
-	<main>
-		<section class="sobre">
+	<div class="layout">
+		<header>
 			<div class="container">
-				<div class="itens">			
-					<div class="foto">
-						<img src="img/foto-tag-miolo.png" alt="TAG">
-					</div>
-
-					<div class="icone-lapis">
-						<i class="fa fa-pencil"></i>
-					</div>
-
-					<div class="icone-code">
-						<i class="fa fa-code"></i>
-					</div>
-
-					<div class="icone-coracao">
-						<i class="fa fa-heart"></i>
-					</div>
-
-					<div class="icone-compartilhar">
-						<i class="fa fa-share-alt"></i>
-					</div>
+				<div class="logo">
+					<a href="index.html">
+						<img src="img/logo-tag-topo.svg" alt="logo Topo Tag" />
+					</a>
 				</div>
-				<div class="textos">
-					<p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong> Error in soluta quidem, reiciendis voluptate sunt ad eius sit, sapiente repellat consectetur officiis harum assumenda porro tenetur! Ipsa laboriosam aliquid eaque!</p>
+				<div class="links">
+					<nav>
+						<ul>
+							<li><a href="index.html">Inicio</a></li>
+							<li><a href="sobre.html">Sobre</a></li>
+							<li><a href="portfolio.html">Portfolio</a></li>
+							<li><a href="contato.html">Contato</a></li>
+						</ul>
+					</nav>
+					
+					<a class="toggle" href="javascript:;">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
 
-					<a href="sobre.html" class="botao medio"><i class="fa fa-eye"></i> Continue lendo</a>
+					<ul class="social">
+						<li>
+							<a href="#"><i class="fa fa-facebook"></i></a>
+						</li>
+
+						<li>
+							<a href="#"><i class="fa fa-github-alt"></i></a>
+						</li>
+					</ul>
 				</div>
+
+				<h1><strong>Project</strong> R. <strong>Informática</strong></h1>
+
+				<p>Code // Share // Reboot</p>
 			</div>
-		</section>
-	</main>
+		</header>
 
-	<footer>
-		<div class="logo-rodape">
-			<a href="index.html">
-				<img src="img/logo-tag-rodape.svg" alt="TAG-RODAPE">
-			</a>
+		<main>
+			<section class="sobre">
+				<div class="container">
+					<div class="itens">			
+						<div class="foto">
+							<img src="img/foto-tag-miolo.png" alt="TAG">
+						</div>
 
-			<p>2017 Todos direitos reservados</p>
-		</div>
-	</footer>
+						<div class="icone-lapis">
+							<i class="fa fa-pencil"></i>
+						</div>
+
+						<div class="icone-code">
+							<i class="fa fa-code"></i>
+						</div>
+
+						<div class="icone-coracao">
+							<i class="fa fa-heart"></i>
+						</div>
+
+						<div class="icone-compartilhar">
+							<i class="fa fa-share-alt"></i>
+						</div>
+					</div>
+					<div class="textos">
+						<p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong> Error in soluta quidem, reiciendis voluptate sunt ad eius sit, sapiente repellat consectetur officiis harum assumenda porro tenetur! Ipsa laboriosam aliquid eaque!</p>
+
+						<a href="sobre.html" class="botao medio"><i class="fa fa-eye"></i> Continue lendo</a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="logo-rodape">
+				<a href="index.html">
+					<img src="img/logo-tag-rodape.svg" alt="TAG-RODAPE">
+				</a>
+
+				<p>2017 Todos direitos reservados</p>
+			</div>
+		</footer>
+	</div>
+	
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script>
+		$(function(){
+			
+			$('.toggle').click(function(){
+				$('.layout').toggleClass('ativo');
+				$('.menu-responsivo').toggleClass('ativo');
+				$(this).toggleClass('ativo');
+
+			});
+		});
+	</script>
 </body>
 </html>
