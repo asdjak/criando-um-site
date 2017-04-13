@@ -4,9 +4,10 @@
 	<meta charset="UTF-8">
 	<title>Criando um site - html</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/geral.css">
-	<link rel="stylesheet" href="css/plugins.css">
 	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/geral.css">
+	<link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
+	<link rel="stylesheet" href="css/plugins.css">
 </head>
 <body>
 
@@ -22,7 +23,7 @@
 	<div class="layout">
 		<header>
 			<div class="container">
-				<div class="logo">
+				<div class="logo wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">
 					<a href="index.html">
 						<img src="img/logo-tag-topo.svg" alt="logo Topo Tag" />
 					</a>
@@ -64,23 +65,23 @@
 			<section class="sobre">
 				<div class="container">
 					<div class="itens">			
-						<div class="foto">
+						<div class="foto wow bounceInDown" data-wow-duration="1s" data-wow-delay="5s">
 							<img src="img/foto-tag-miolo.png" alt="TAG">
 						</div>
 
-						<div class="icone-lapis">
+						<div class="icone-lapis wow flipInX" data-wow-duration="1s" data-wow-delay="1s">
 							<i class="fa fa-pencil"></i>
 						</div>
 
-						<div class="icone-code">
+						<div class="icone-code wow flipInX" data-wow-duration="1s" data-wow-delay="2s">
 							<i class="fa fa-code"></i>
 						</div>
 
-						<div class="icone-coracao">
+						<div class="icone-coracao wow flipInX" data-wow-duration="1s" data-wow-delay="3s">
 							<i class="fa fa-heart"></i>
 						</div>
 
-						<div class="icone-compartilhar">
+						<div class="icone-compartilhar wow flipInX" data-wow-duration="1s" data-wow-delay="4s">
 							<i class="fa fa-share-alt"></i>
 						</div>
 					</div>
@@ -105,6 +106,7 @@
 	</div>
 	
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/wow/dist/wow.min.js"></script>
 	<script>
 		$(function(){
 			
@@ -114,6 +116,7 @@
 				$(this).toggleClass('ativo');
 
 			});
+			new WOW().init();
 		});
 	</script>
 </body>
